@@ -1,0 +1,233 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Melt & Sip is a sandwich cafe concept with toasted sourdough, proper coffee, and playful food motion."
+    />
+    <title>Melt & Sip | Sandwich Cafe</title>
+    <link rel="icon" href="./assets/icons/favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="./css/base.css" />
+    <link rel="stylesheet" href="./css/layout.css?v=20260607-6" />
+    <link rel="stylesheet" href="./css/animations.css" />
+  </head>
+  <body class="no-js">
+    <div class="loader" aria-label="Loading the sandwich cafe website">
+      <p class="loader__label">TOASTING SOURDOUGH...</p>
+      <div class="loader__stack" aria-hidden="true">
+        <span class="sandwich-layer sandwich-layer--bottom"></span>
+        <span class="sandwich-layer sandwich-layer--turkey"></span>
+        <span class="sandwich-layer sandwich-layer--cheese"></span>
+        <span class="sandwich-layer sandwich-layer--tomato"></span>
+        <span class="sandwich-layer sandwich-layer--lettuce"></span>
+        <span class="sandwich-layer sandwich-layer--top"></span>
+      </div>
+    </div>
+
+    <div class="page-wipe" aria-hidden="true">
+      <svg viewBox="0 0 100 100" preserveAspectRatio="none">
+        <path class="page-wipe__path page-wipe__path--coffee" />
+        <path class="page-wipe__path page-wipe__path--tomato" />
+        <path class="page-wipe__path page-wipe__path--cheese" />
+      </svg>
+      <span class="page-wipe__text">Brewing...</span>
+    </div>
+
+    <header class="site-header" data-nav>
+      <a class="brand" href="#top" aria-label="Melt and Sip home">MELT & SIP</a>
+      <nav class="site-nav" aria-label="Main navigation">
+        <a href="#menu">Menu</a>
+        <a href="#ingredients">Layers</a>
+        <a href="#delivery">Delivery</a>
+      </nav>
+      <button class="icon-button" type="button" data-wave-trigger aria-label="Preview page transition">
+        <span></span>
+        <span></span>
+      </button>
+    </header>
+
+    <main id="top">
+      <section class="hero section-panel" aria-labelledby="hero-title">
+        <div class="hero__texture" aria-hidden="true">
+          <img src="./assets/icons/openmoji/bread.svg" alt="" />
+          <img src="./assets/icons/openmoji/tomato.svg" alt="" />
+          <img src="./assets/icons/openmoji/coffee.svg" alt="" />
+          <img src="./assets/icons/openmoji/cheese.svg" alt="" />
+        </div>
+        <div class="hero__copy">
+          <p class="eyebrow">small-batch sandwiches + proper coffee</p>
+          <h1 id="hero-title" class="display-title js-pop-text">THE SANDWICH</h1>
+          <p class="hero__subcopy">
+            Toasted sourdough, bright layers, and a coffee pairing built for a loud little cafe
+            brand.
+          </p>
+          <div class="hero__badges" aria-label="Brand promises">
+            <span class="badge js-pop-text">BREWED FRESH</span>
+            <span class="badge js-pop-text">STACKED DAILY</span>
+          </div>
+          <button class="blob-button" type="button" data-wave-trigger>
+            <span>Order the melt</span>
+          </button>
+        </div>
+        <div class="hero__media">
+          <div class="hero__plate" aria-hidden="true"></div>
+          <img class="hero__icon hero__icon--bread" data-float src="./assets/icons/openmoji/bread.svg" alt="" />
+          <img class="hero__icon hero__icon--tomato" data-float src="./assets/icons/openmoji/tomato.svg" alt="" />
+          <img class="hero__icon hero__icon--cheese" data-float src="./assets/icons/openmoji/cheese.svg" alt="" />
+          <img class="hero__icon hero__icon--coffee" data-float src="./assets/icons/openmoji/coffee.svg" alt="" />
+          <img
+            class="hero__image"
+            src="./assets/images/hero-cutout.png"
+            alt="A stacked toasted sourdough sandwich beside a ceramic coffee cup."
+          />
+        </div>
+      </section>
+
+      <section id="menu" class="intro section-panel" aria-labelledby="intro-title">
+        <div>
+          <p class="eyebrow">stacked to order</p>
+          <h2 id="intro-title" class="section-title js-line-reveal">
+            Crispy, creamy, fully stacked.
+          </h2>
+        </div>
+        <p class="body-copy js-line-reveal">
+          Toasted sourdough, crisp greens, melty cheese, and a coffee pairing built for the first
+          bite. Every stack is balanced for crunch, cream, salt, and a little brightness.
+        </p>
+      </section>
+
+      <section class="cards-section section-panel" aria-label="Cafe highlights">
+        <article class="tilt-card" data-tilt-card data-base-rotation="-5">
+          <img class="tilt-card__icon" src="./assets/icons/openmoji/bread.svg" alt="" />
+          <span class="card-kicker">01</span>
+          <h3>Sourdough first</h3>
+          <p>Slow-fermented slices are griddled until the edges stay crisp and the center stays soft.</p>
+        </article>
+        <article class="tilt-card" data-tilt-card data-base-rotation="4">
+          <img class="tilt-card__icon" src="./assets/icons/openmoji/lettuce.svg" alt="" />
+          <span class="card-kicker">02</span>
+          <h3>Fresh layers</h3>
+          <p>Greens, tomato, cheese, and aioli are stacked with enough contrast to keep each bite awake.</p>
+        </article>
+        <article class="tilt-card" data-tilt-card data-base-rotation="-2">
+          <img class="tilt-card__icon" src="./assets/icons/openmoji/coffee.svg" alt="" />
+          <span class="card-kicker">03</span>
+          <h3>Coffee pairing</h3>
+          <p>House coffee runs bright and roasty, ready for buttery toast and late-morning lunches.</p>
+        </article>
+      </section>
+
+      <section class="mascot section-panel" aria-labelledby="mascot-title">
+        <div class="tracker-stage" aria-hidden="true">
+          <span class="tracker-grid"></span>
+          <img class="tracker-object tracker-object--avocado" src="./assets/images/tracker-objects/avocado.png" alt="" />
+          <img class="tracker-object tracker-object--egg" src="./assets/images/tracker-objects/egg.png" alt="" />
+          <img class="tracker-object tracker-object--aioli" src="./assets/images/tracker-objects/aioli.png" alt="" />
+          <span class="tracker-lens" data-pointer-lens>
+            <span class="tracker-lens__glass">
+              <span class="tracker-lens__scene">
+                <span class="tracker-lens__grid"></span>
+                <img class="tracker-lens__object tracker-lens__object--avocado" src="./assets/images/tracker-objects/avocado.png" alt="" />
+                <img class="tracker-lens__object tracker-lens__object--egg" src="./assets/images/tracker-objects/egg.png" alt="" />
+                <img class="tracker-lens__object tracker-lens__object--aioli" src="./assets/images/tracker-objects/aioli.png" alt="" />
+              </span>
+              <span class="tracker-lens__reticle"></span>
+            </span>
+          </span>
+        </div>
+        <div>
+          <p class="eyebrow">flavor scanner</p>
+          <h2 id="mascot-title" class="section-title mascot__title js-line-reveal">
+            Flavor notes track your cursor.
+          </h2>
+        </div>
+      </section>
+
+      <section id="ingredients" class="ingredients section-panel" aria-labelledby="ingredients-title">
+        <div class="ingredients__copy">
+          <p class="eyebrow">fresh from the counter</p>
+          <h2 id="ingredients-title" class="section-title js-pop-text">EVERY LAYER MATTERS</h2>
+        </div>
+        <div class="ingredient ingredient--toast" data-parallax="-0.08">
+          <img src="./assets/icons/openmoji/bread.svg" alt="" />
+          <span>TOAST</span>
+        </div>
+        <div class="ingredient ingredient--lettuce" data-parallax="-0.12">
+          <img src="./assets/icons/openmoji/lettuce.svg" alt="" />
+          <span>LETTUCE</span>
+        </div>
+        <div class="ingredient ingredient--tomato" data-parallax="-0.06">
+          <img src="./assets/icons/openmoji/tomato.svg" alt="" />
+          <span>TOMATO</span>
+        </div>
+        <div class="ingredient ingredient--coffee" data-parallax="-0.1">
+          <img src="./assets/icons/openmoji/coffee.svg" alt="" />
+          <span>COFFEE</span>
+        </div>
+        <div class="peel-sticker" data-peel-sticker>
+          <span class="peel-sticker__main">HOUSE PICKLE</span>
+          <span class="peel-sticker__fold"></span>
+        </div>
+      </section>
+
+      <section id="delivery" class="delivery section-panel" aria-labelledby="delivery-title">
+        <div class="delivery__copy">
+          <p class="eyebrow">local pickup route</p>
+          <h2 id="delivery-title" class="section-title js-line-reveal">
+            From our counter to your corner.
+          </h2>
+        </div>
+        <div class="route-map" data-route-map>
+          <svg viewBox="0 0 900 420" aria-hidden="true">
+            <path
+              id="delivery-path"
+              d="M 70 330 C 180 70, 300 350, 430 160 S 680 70, 820 300"
+            />
+          </svg>
+          <span class="delivery-cup" aria-hidden="true">
+            <img src="./assets/icons/openmoji/coffee.svg" alt="" />
+          </span>
+          <article class="route-card route-card--one">
+            <img src="./assets/icons/openmoji/bread.svg" alt="" />
+            Toast House
+          </article>
+          <article class="route-card route-card--two">
+            <img src="./assets/icons/openmoji/pickle.svg" alt="" />
+            Market Lane
+          </article>
+          <article class="route-card route-card--three">
+            <img src="./assets/icons/openmoji/coffee.svg" alt="" />
+            Brew Stop
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-throws" aria-hidden="true">
+        <img class="throw-object throw-object--coffee throw-object--back throw-object--lane-1" data-throw-object src="./assets/images/throw-objects/coffee.png" alt="" />
+        <img class="throw-object throw-object--tomato throw-object--front throw-object--lane-2" data-throw-object src="./assets/images/throw-objects/tomato.png" alt="" />
+        <img class="throw-object throw-object--cheese throw-object--front throw-object--lane-3" data-throw-object src="./assets/images/throw-objects/cheese.png" alt="" />
+        <img class="throw-object throw-object--toast throw-object--back throw-object--lane-4" data-throw-object src="./assets/images/throw-objects/toast.png" alt="" />
+        <img class="throw-object throw-object--tomato throw-object--back throw-object--lane-5" data-throw-object src="./assets/images/throw-objects/tomato.png" alt="" />
+        <img class="throw-object throw-object--coffee throw-object--front throw-object--lane-6" data-throw-object src="./assets/images/throw-objects/coffee.png" alt="" />
+        <img class="throw-object throw-object--toast throw-object--front throw-object--lane-7" data-throw-object src="./assets/images/throw-objects/toast.png" alt="" />
+        <img class="throw-object throw-object--cheese throw-object--back throw-object--lane-8" data-throw-object src="./assets/images/throw-objects/cheese.png" alt="" />
+      </div>
+      <p class="footer-title js-pop-text">MELT & SIP</p>
+      <!-- <p class="inspiration-note">
+        Motion inspiration:
+        <a href="https://www.cravburgers.shop/" target="_blank" rel="noreferrer">CRAV Burgers</a>.
+        Melt & Sip is an original sandwich cafe concept.
+      </p> -->
+    </footer>
+
+    <script src="./node_modules/gsap/dist/gsap.min.js"></script>
+    <script src="./node_modules/gsap/dist/ScrollTrigger.min.js"></script>
+    <script src="./node_modules/gsap/dist/MotionPathPlugin.min.js"></script>
+    <script src="./node_modules/lenis/dist/lenis.min.js"></script>
+    <script type="module" src="./js/main.js"></script>
+  </body>
+</html>

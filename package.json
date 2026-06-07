@@ -1,0 +1,20 @@
+{
+  "name": "sandwich-cafe-gsap-starter",
+  "version": "1.0.0",
+  "description": "这是一个从零开始学习 GSAP 的教学项目。目标不是复制任何现有品牌，而是学习一个高动效食品网站常用的动画方法，并把它改造成原创的三明治咖啡店网站。",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "gsap": "^3.15.0",
+    "lenis": "^1.3.23"
+  }
+}
